@@ -1,0 +1,15 @@
+/** main.scss */
+
+// reset
+@import 'core/reset';
+
+// config
+@import 'config/breakpoints';
+@import 'config/colors';
+
+// core
+@import 'core/layout';
+@import 'core/root';
+
+// components
+@import 'components/card';

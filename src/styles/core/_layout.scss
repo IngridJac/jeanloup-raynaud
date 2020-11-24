@@ -1,0 +1,19 @@
+/** layout.scss */
+
+// page layout
+
+.page {
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  @media #{$bp-m} {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+

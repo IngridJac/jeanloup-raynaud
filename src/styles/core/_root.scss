@@ -1,0 +1,25 @@
+/** root.scss */
+
+// root elements
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  background: $color-white;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+body {
+  color: $color-grey-100;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.75rem;
+  overflow-x: hidden;
+  position: relative;
+  height: 100%;
+}
