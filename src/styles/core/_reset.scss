@@ -2,17 +2,53 @@
 
 // margins & paddings
 
-address, article, aside, audio, body, blockquote, button, canvas, cite,
-dd, details, dl, figcaption, figure, footer, form,
-h1, h2, h3, h4, h5, h6, header, main, menu, nav, ol,
-output, p, pre, section, summary, table, ul, video {
+address,
+article,
+aside,
+audio,
+body,
+blockquote,
+canvas,
+cite,
+dd,
+details,
+dl,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+input,
+main,
+menu,
+nav,
+ol,
+output,
+p,
+pre,
+section,
+summary,
+table,
+ul,
+video {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 // headline styles
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: normal;
 }
