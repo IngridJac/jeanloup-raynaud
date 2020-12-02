@@ -7,12 +7,13 @@
 
 .button {
   appearance: none;
-  background: none;
-  border: solid 1px $color-grey-80;
+  background: $color-black;
+  border: none;
   box-sizing: border-box;
+  color: $color-white;
   cursor: pointer;
   display: block;
-  font-size: 1rem;
+  font-size: 18px;
   height: 3rem;
   line-height: 3rem;
   outline: none;
@@ -27,13 +28,13 @@
   // states
 
   &:hover {
-    background: $color-grey-20;
+    background: $color-grey-80;
     transition: background 50ms linear;
   }
 
   &:active,
   &.is--active {
-    background: $color-grey-80;
+    background: $color-black;
   }
 
   @media #{$bp-m} {
@@ -48,6 +49,5 @@ a.button,
 a.button:link,
 a.button:active,
 a.button:visited {
-  color: $color-grey-100;
   text-decoration: none;
 }
