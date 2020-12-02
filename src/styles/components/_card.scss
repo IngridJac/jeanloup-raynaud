@@ -1,0 +1,100 @@
+/** card.scss */
+
+// block
+// -----
+
+.card {
+  background: #ffffff;
+  box-shadow: -20px 20px 25px -10px $color-blue-80;
+  border-radius: 8px;
+  position: absolute;
+  right: 8%;
+  left: 8%;
+  bottom: 8%;
+  top: 8%;
+}
+
+.card__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card__section {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+
+  &:nth-child(1) {
+    justify-content: center;
+  }
+
+  &:nth-child(2) {
+    justify-content: space-around;
+  }
+}
+
+.card__logoVisual {
+  width: 100px;
+  margin-top: 2rem;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.card__logoWordmark {
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+  width: 200px;
+}
+
+.card__copy {
+  width: 600px;
+  padding: 0 2.5rem;
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 2rem 0;
+  }
+}
+
+.card__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: 2rem auto 5rem;
+}
+
+.card__social {
+  list-style: none;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.card__social__item {
+  margin: 0 0.75rem;
+
+  &:hover {
+    svg {
+      fill: $color-blue-40;
+    }
+  }
+}
+
+.card__social__link {
+  display: block;
+}
