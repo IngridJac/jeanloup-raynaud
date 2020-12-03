@@ -2,7 +2,7 @@
 
 // constants
 
-$bp-xxs-minwidth : 375px;
+$bp-xxs-minwidth : 374px;
 $bp-xs-minwidth  : 576px;
 $bp-s-minwidth  : 768px;
 $bp-m-minwidth  : 1024px;
@@ -16,7 +16,7 @@ $bp-l-maxwidth  : ($bp-xl-minwidth - 0.01);
 
 // "fluid" breakpoints
 
-$bp-xxs : "only screen and (min-width: 0rem)";
+$bp-xxs : "only screen and (min-width: #{$bp-xxs-minwidth})";
 $bp-xs  : "only screen and (min-width: #{$bp-xs-minwidth})";
 $bp-s  : "only screen and (min-width: #{$bp-s-minwidth})";
 $bp-m  : "only screen and (min-width: #{$bp-m-minwidth})";

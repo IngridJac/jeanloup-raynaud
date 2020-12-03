@@ -66,7 +66,7 @@
 
 .page__left {
   background: $color-blue-40;
-  padding: 3.5rem 1.5rem;
+  padding: 3.5rem 1rem;
   position: relative;
   order: 1;
   min-height: 50vh;
@@ -93,9 +93,9 @@
     }
   }
 
-  // @media #{$bp-s} {
-  //   min-height: initial;
-  // }
+  @media #{$bp-xxs} {
+    padding: 3.5rem 1.5rem;
+  }
 
   @media #{$bp-m} {
     background: $color-transparent;
@@ -121,7 +121,7 @@
       background: $color-black;
       margin: 0 1rem 0.25rem 0;
 
-      @media #{$bp-xs} {
+      @media #{$bp-xxs} {
         content: " ";
       }
     }
@@ -132,7 +132,7 @@
     line-height: 58px;
     font-weight: 600;
 
-    @media #{$bp-xs} {
+    @media #{$bp-xxs} {
       font-size: 56px;
       line-height: 64px;
     }
@@ -144,9 +144,13 @@
   }
 
   p {
-    margin: 2.25rem 0 3.5rem;
+    margin: 1.75rem 0 2.5rem;
     font-size: 18px;
     line-height: 32px;
+
+    @media #{$bp-xs} {
+      margin: 2.25rem 0 3.5rem;
+    }
   }
 
   @media #{$bp-s} {
@@ -155,12 +159,12 @@
 }
 
 .page__right {
-  padding: 3.5rem 1.5rem;
+  padding: 3.5rem 1rem;
   order: 0;
 
   .logo {
     margin: 0 auto;
-    width: 250px;
+    width: 230px;
 
     img {
       display: block;
@@ -170,6 +174,10 @@
     @media #{$bp-s} {
       width: 300px;
     }
+  }
+
+  @media #{$bp-xxs} {
+    padding: 3.5rem 1.5rem;
   }
 
   @media #{$bp-m} {
