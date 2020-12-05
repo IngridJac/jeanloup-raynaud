@@ -7,17 +7,17 @@
 
 .button {
   appearance: none;
-  background: $color-black;
-  border: none;
+  background: none;
+  border: solid 1px $color-black;
   box-sizing: border-box;
-  color: $color-white;
+  color: $color-black;
   cursor: pointer;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   height: 3rem;
   line-height: 3rem;
   outline: none;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   position: relative;
   text-align: center;
   transition: background .1s linear;
@@ -28,7 +28,8 @@
   // states
 
   &:hover {
-    background: $color-grey-80;
+    background: $color-black;
+    color: $color-white;
     transition: background 50ms linear;
   }
 
@@ -37,9 +38,14 @@
     background: $color-black;
   }
 
-  @media #{$bp-m} {
+  @media #{$bp-xxs} {
     display: inline-block;
     vertical-align: middle;
+  }
+
+  @media #{$bp-xs} {
+    font-size: 18px;
+    padding: 0 1.5rem;
   }
 }
 
@@ -50,4 +56,7 @@ a.button:link,
 a.button:active,
 a.button:visited {
   text-decoration: none;
+  cursor: pointer;
+  user-select: text;
+  -webkit-user-drag: none;
 }
